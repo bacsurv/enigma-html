@@ -1,0 +1,33 @@
+main {
+    background-color: var(--dark-grey);
+    color: var(--light-brown);
+    text-align: center;
+    padding: 4rem;
+}
+.large-paragraph {
+    margin: 3rem auto;
+    padding: 0 10rem;
+}
+
+@media (max-width: 1440px) {
+    .large-paragraph {
+        padding: 0 5rem;
+        margin-top: 1rem;
+    }
+    main {
+        padding: 2rem;
+    }
+}
+@media (max-width: 1024px) {
+    .large-paragraph {
+        padding: 0 2rem;
+    }
+}
+@media (max-width: 768px) {
+    .large-paragraph {
+        padding: 0 0.5rem;
+    }
+    main {
+        padding: 1.5rem;
+    }
+}

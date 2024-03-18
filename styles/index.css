@@ -1,0 +1,165 @@
+/* HERO SECTION */
+#hero-section {
+    background-image: url("/img/door.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    text-align: center;
+}
+#layer {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(22, 22, 22, 0.642);
+    padding: 12rem;
+}
+#hero-section .h1 {
+    color: var(--light-brown);
+}
+#hero-section .large-paragraph {
+    color: var(--light-brown);
+    padding: 2rem 0 4rem 0;
+}
+#hero-section .h2 {
+    color: var(--light-brown);
+    padding: 2rem 0 4rem 0;
+}
+
+/* ROOMS SECTION */
+#rooms-section {
+    background-color: var(--brown);
+    color: var(--dark-grey);
+    text-align: center;
+    padding: 2rem;
+}
+#rooms-section .cards-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto 2rem auto;
+    padding: 0 5rem;
+    width: 65%;
+}
+#rooms-section .cards-container a {
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+}
+#rooms-section .cards-container .card {
+    background-color: var(--light-brown);
+    width: 20rem;
+    box-shadow: 3px 3px 10px #1616166e;
+}
+#rooms-section .cards-container .card:hover {
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+}
+#rooms-section .cards-container .card img {
+    width: 100%;
+    height: auto;
+}
+#rooms-section .cards-container .card .card-body {
+    padding: 1.3rem;
+}
+#rooms-section .cards-container .card .card-body .h2 {
+    padding: 0 0 1rem 0;
+}
+
+/* GAME SECTION */
+#game-section {
+    background-color: var(--dark-grey);
+    color: var(--light-brown);
+    text-align: center;
+    padding: 3rem 0;
+}
+#game-section .cards-container {
+    display: grid;
+    margin: 0 auto 3rem auto;
+    grid-template-columns: 18rem 18rem 18rem;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem 1rem;
+    width: 60%;
+    justify-content: center;
+}
+#game-section .cards-container .card {
+    text-align: left;
+    height: 15rem;
+    padding: 2rem 1rem;
+}
+#game-section .cards-container .card .h2 {
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 1920px) {
+    #rooms-section .cards-container {
+        width: 90%;
+    }
+}
+@media (max-width: 1440px) {
+    #hero-section .h2 {
+        padding: 1rem 0 2rem 0;
+    }
+    #rooms-section .cards-container {
+        width: 100%;
+    }
+}
+@media (max-width: 1280px) {
+    #rooms-section .cards-container {
+        width: 100%;
+    }
+    #rooms-section .cards-container .card {
+        width: 16rem;
+    }
+    #game-section .cards-container {
+        gap: 0;
+        margin: 0 auto 3rem auto;
+        grid-template-columns: 18rem 18rem 18rem;
+
+    }
+}
+@media (max-width: 1024px) {
+    #rooms-section {
+        padding: 2rem 1rem;
+    }
+    #rooms-section .cards-container {
+        padding: 0;
+    }
+    #rooms-section .cards-container .card {
+        width: 15rem;
+    }
+    #game-section .cards-container {
+        gap: 0;
+        margin: 0 auto;
+        grid-template-columns: 20rem 20rem;
+    }
+    #layer {
+        padding: 5rem;
+    }
+}
+@media (max-width: 768px) {
+    #rooms-section {
+        padding: 1rem;
+    }
+    #rooms-section .cards-container {
+        display: block;
+    }
+    #rooms-section .cards-container .card {
+        width: 20rem;
+        margin: 3rem auto;
+    }
+    #game-section .cards-container .card {
+        height: 13rem;
+    }
+    #game-section .cards-container {
+        gap: 0;
+        margin: 0 auto 3rem auto;
+        grid-template-columns: 22rem;
+    }
+}
+@media (max-width: 375px) {
+    #rooms-section .cards-container .card {
+        width: 14rem;
+    }
+    #game-section .cards-container {
+        grid-template-columns: 15rem;
+    }
+}
