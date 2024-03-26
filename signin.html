@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bejelentkezés/Regisztráció</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/signin.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atma&family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <script src="https://kit.fontawesome.com/cc61dadd4d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <aside id="side-drawer">
+      <header>
+        <div class="logo">Enigma</div>
+        <a href="#" class="side-drawer-btn">
+          <span class="lines" id="line-1"></span>
+          <span class="lines" id="line-2"></span>
+          <span class="lines" id="line-3"></span>
+        </a>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Főoldal</a></li>
+          <li><a href="/rooms.html">Szobáink</a></li>
+          <li><a href="/about.html">Rólunk</a></li>
+          <li><a href="/booking.html">Foglalás</a></li>
+          <li><a href="" class="active-menu">Bejelentkezés/Regisztráció</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <header>
+      <a href="#side-drawer" class="side-drawer-btn">
+        <span class="lines" id="line-1"></span>
+        <span class="lines" id="line-2"></span>
+        <span class="lines" id="line-3"></span>
+      </a>
+      <div class="logo">Enigma</div>
+      <ul>
+        <li><a href="/index.html">Főoldal</a></li>
+        <li><a href="/rooms.html">Szobáink</a></li>
+        <li><a href="/about.html">Rólunk</a></li>
+        <li><a href="/booking.html">Foglalás</a></li>
+        <li class="active-menu"><a href="" class="fa-regular fa-user"></a></li>
+      </ul>
+    </header>
+    <main>
+      <div class="h1">Bejelentkezés/Regisztráció</div>
+      <form action="">
+        <div class="h2">Regisztráció</div>
+        <div class="form-elements-container">
+          <div class="form-element">
+            <label for="group-name" class="paragraph">Felhasználó név:</label>
+            <input
+              type="text"
+              name="username_reg"
+              id="username_reg"
+              placeholder="kissbela"
+              required
+            />
+          </div>
+          <div class="form-element">
+            <label for="email" class="paragraph">Email cím:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="elek@gmail.com"
+              required
+            />
+          </div>
+          <div class="form-element">
+            <label for="quantity" class="paragraph">Jelszó:</label>
+            <input
+              type="password"
+              name="password_reg"
+              id="password_reg"
+              min="8"
+              placeholder="Jelszó"
+              required
+            />
+          </div>
+          <div class="form-element">
+            <label for="quantity" class="paragraph">Jelszó mégegyszer:</label>
+            <input
+              type="password"
+              name="password2_reg"
+              id="password2_reg"
+              min="8"
+              placeholder="Jelszó"
+              required
+            />
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Regisztráció</button>
+        <button type="reset">Törlöm az adataimat!</button>
+      </form>
+      <form action="">
+        <div class="h2">Bejelentkezés</div>
+        <div class="form-elements-container">
+          <div class="form-element">
+            <label for="group-name" class="paragraph">Felhasználó név:</label>
+            <input
+              type="text"
+              name="username_be"
+              id="username_be"
+              placeholder="kissbela"
+              required
+            />
+          </div>
+          <div class="form-element">
+            <label for="quantity" class="paragraph">Jelszó:</label>
+            <input
+              type="password"
+              name="password_be"
+              id="password_be"
+              min="8"
+              placeholder="Jelszó"
+              required
+            />
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Bejelentkezés</button>
+      </form>
+    </main>
+    <footer>
+      <p class="fa fa-facebook"></a>
+      <p class="fa fa-instagram"></a>
+      <p class="fa fa-youtube"></a>
+      <p class="fa fa-google"></a>
+    </footer>
+  </body>
+</html>
