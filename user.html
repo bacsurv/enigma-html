@@ -53,11 +53,11 @@
     </header>
     <main>
       <div class="h1">Felhasználói fiók</div>
-      <form action="">
+      <form action="/action.php">
         <div class="h2">Adatmódosítás</div>
         <div class="form-elements-container">
           <div class="form-element">
-            <label for="group-name" class="paragraph">Felhasználó név:</label>
+            <label for="username_reg" class="paragraph">Felhasználó név:</label>
             <input
               type="text"
               name="username_reg"
@@ -77,7 +77,7 @@
             />
           </div>
           <div class="form-element">
-            <label for="group-name" class="paragraph">Vezetéknévnév:</label>
+            <label for="second-name" class="paragraph">Vezetéknévnév:</label>
             <input
               type="text"
               name="second-name"
@@ -86,7 +86,7 @@
             />
           </div>
           <div class="form-element">
-            <label for="group-name" class="paragraph">Keresztnév:</label>
+            <label for="first-name" class="paragraph">Keresztnév:</label>
             <input
               type="text"
               name="first-name"
@@ -106,34 +106,31 @@
             />
           </div>
           <div class="form-element">
-            <label for="quantity" class="paragraph">Régi jelszó:</label>
+            <label for="password_old" class="paragraph">Régi jelszó:</label>
             <input
               type="password"
               name="password_old"
               id="password_old"
-              min="8"
               placeholder="Jelszó"
               required
             />
           </div>
           <div class="form-element">
-            <label for="quantity" class="paragraph">Új jelszó:</label>
+            <label for="password_new" class="paragraph">Új jelszó:</label>
             <input
               type="password"
               name="password_new"
               id="password_new"
-              min="8"
               placeholder="Jelszó"
               required
             />
           </div>
           <div class="form-element">
-            <label for="quantity" class="paragraph">Új jelszó mégegyszer:</label>
+            <label for="password2_new" class="paragraph">Új jelszó mégegyszer:</label>
             <input
               type="password"
               name="password2_new"
               id="password2_new"
-              min="8"
               placeholder="Jelszó"
               required
             />
@@ -145,10 +142,10 @@
       </form>
     </main>
     <footer>
-      <p class="fa fa-facebook"></a>
-      <p class="fa fa-instagram"></a>
-      <p class="fa fa-youtube"></a>
-      <p class="fa fa-google"></a>
+      <p class="fa fa-facebook"></p>
+      <p class="fa fa-instagram"></p>
+      <p class="fa fa-youtube"></p>
+      <p class="fa fa-google"></p>
     </footer>
   </body>
 </html>

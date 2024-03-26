@@ -53,11 +53,11 @@
     </header>
     <main>
       <div class="h1">Bejelentkezés/Regisztráció</div>
-      <form action="">
+      <form action="/action.php">
         <div class="h2">Regisztráció</div>
         <div class="form-elements-container">
           <div class="form-element">
-            <label for="group-name" class="paragraph">Felhasználó név:</label>
+            <label for="username_reg" class="paragraph">Felhasználó név:</label>
             <input
               type="text"
               name="username_reg"
@@ -77,23 +77,21 @@
             />
           </div>
           <div class="form-element">
-            <label for="quantity" class="paragraph">Jelszó:</label>
+            <label for="password_reg" class="paragraph">Jelszó:</label>
             <input
               type="password"
               name="password_reg"
               id="password_reg"
-              min="8"
               placeholder="Jelszó"
               required
             />
           </div>
           <div class="form-element">
-            <label for="quantity" class="paragraph">Jelszó mégegyszer:</label>
+            <label for="password2_reg" class="paragraph">Jelszó mégegyszer:</label>
             <input
               type="password"
               name="password2_reg"
               id="password2_reg"
-              min="8"
               placeholder="Jelszó"
               required
             />
@@ -102,11 +100,11 @@
         <button type="submit" class="btn btn-primary">Regisztráció</button>
         <button type="reset">Törlöm az adataimat!</button>
       </form>
-      <form action="">
+      <form action="/action.php">
         <div class="h2">Bejelentkezés</div>
         <div class="form-elements-container">
           <div class="form-element">
-            <label for="group-name" class="paragraph">Felhasználó név:</label>
+            <label for="username_be" class="paragraph">Felhasználó név:</label>
             <input
               type="text"
               name="username_be"
@@ -116,12 +114,11 @@
             />
           </div>
           <div class="form-element">
-            <label for="quantity" class="paragraph">Jelszó:</label>
+            <label for="password_be" class="paragraph">Jelszó:</label>
             <input
               type="password"
               name="password_be"
               id="password_be"
-              min="8"
               placeholder="Jelszó"
               required
             />
@@ -131,10 +128,10 @@
       </form>
     </main>
     <footer>
-      <p class="fa fa-facebook"></a>
-      <p class="fa fa-instagram"></a>
-      <p class="fa fa-youtube"></a>
-      <p class="fa fa-google"></a>
+      <p class="fa fa-facebook"></p>
+      <p class="fa fa-instagram"></p>
+      <p class="fa fa-youtube"></p>
+      <p class="fa fa-google"></p>
     </footer>
   </body>
 </html>
