@@ -1,3 +1,0 @@
-a:8:{s:4:"room";s:17:"elveszett-templom";s:4:"date";s:10:"2024-05-06";s:4:"time";s:2:"13";s:10:"group_name";s:3:"asd";s:8:"quantity";s:1:"2";s:5:"email";s:17:"bacsurv@gmail.com";s:5:"phone";s:11:"06305465451";s:7:"message";s:0:"";}
-a:8:{s:4:"room";s:17:"elveszett-templom";s:4:"date";s:10:"2024-05-06";s:4:"time";s:2:"14";s:10:"group_name";s:2:"ed";s:8:"quantity";s:1:"2";s:5:"email";s:17:"bacsurv@gmail.com";s:5:"phone";s:11:"06305465451";s:7:"message";s:0:"";}
-a:8:{s:4:"room";s:17:"gyemant-birodalom";s:4:"date";s:10:"2024-05-07";s:4:"time";s:2:"13";s:10:"group_name";s:36:"<img src="" onerror="alert('Booo')">";s:8:"quantity";s:1:"4";s:5:"email";s:13:"alma@alma.com";s:5:"phone";s:11:"06305465451";s:7:"message";s:47:"<img src="" onerror="alert('MEGJEGYZÉÉÉS')">";}

@@ -1,15 +1,10 @@
-<?php
-session_start();
-include ("kozos.php");
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gyémánt Birodalom</title>
+  <title>Elveszett Templom</title>
   <link rel="stylesheet" href="styles/styles.css" />
   <link rel="stylesheet" href="styles/room.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,15 +27,11 @@ include ("kozos.php");
     </header>
     <nav>
       <ul>
-        <li><a href="index.php">Főoldal</a></li>
-        <li><a href="rooms.php" class="active-menu">Szobáink</a></li>
-        <li><a href="about.php">Rólunk</a></li>
-        <li><a href="booking_page.php">Foglalás</a></li>
-        <?php if (!isset($_SESSION["user"]) || empty($_SESSION["user"])): ?>
-          <li><a href="signin_page.php">Bejelentkezés/Regisztráció</a></li>
-        <?php else: ?>
-          <li><a href="user_page.php">Felhasználói adatmódosítás</a></li>
-        <?php endif; ?>
+        <li><a href="index.html">Főoldal</a></li>
+        <li><a href="" class="active-menu">Szobáink</a></li>
+        <li><a href="about.html">Rólunk</a></li>
+        <li><a href="booking.html">Foglalás</a></li>
+        <li><a href="signin.html">Bejelentkezés/Regisztráció</a></li>
       </ul>
     </nav>
   </aside>
@@ -52,47 +43,45 @@ include ("kozos.php");
     </a>
     <div class="logo">Enigma</div>
     <ul>
-      <li><a href="index.php">Főoldal</a></li>
-      <li class="active-menu"><a href="rooms.php">Szobáink</a></li>
-      <li><a href="about.php">Rólunk</a></li>
-      <li><a href="booking_page.php">Foglalás</a></li>
-      <?php if (!isset($_SESSION["user"]) || empty($_SESSION["user"])): ?>
-        <li><a href="signin_page.php" class="fa-regular fa-user"></a></li>
-      <?php else: ?>
-        <li><a href="user_page.php" class="fa-regular fa-user"></a></li>
-      <?php endif; ?>
+      <li><a href="index.html">Főoldal</a></li>
+      <li class="active-menu"><a href="">Szobáink</a></li>
+      <li><a href="about.html">Rólunk</a></li>
+      <li><a href="booking.html">Foglalás</a></li>
+      <li><a href="signin.html" class="fa-regular fa-user"></a></li>
     </ul>
   </header>
   <main>
-    <div class="h1">Gyémánt Birodalom</div>
+    <div class="h1">Elveszett Templom</div>
     <div class="large-paragraph">
-      Egy fényűző palota, tele drágakövekkel és titokzatos mechanizmusokkal. A
-      játékosoknak meg kell találniuk a birodalom legértékesebb kincsét, a
-      Gyémánt Koronát, mielőtt az idő lejár.
+      A rejtvényekkel teli, őszi hangulatú szoba, melyben a résztvevőknek egy
+      elveszett templom titkait kell felfedezniük. Az eldugott freskók,
+      rejtett kapcsolók és titkos folyosók segítenek az útvesztőben.
     </div>
     <div class="paragraph">
-      A Gyémánt Birodalom legendás hírnevet szerzett magának a világ minden
-      táján, mint a leggazdagabb és legfényűzőbb birodalom, mely tele van
-      drágakövekkel és értékes kincsekkel. Azonban a birodalom gazdagsága és
-      hatalma rejti a mélyen elrejtett titkokat és veszélyeket is. Egy merész
-      kincsvadász csapat úgy dönt, hogy felfedezik a Gyémánt Birodalom
-      rejtélyeit, és megszerzik a birodalom legféltettebb kincsét, a Gyémánt
-      Koronát. Elindulnak a birodalom szívébe, készülve az izgalmas
-      kihívásokra és veszélyekre. Ahogy felfedezik a birodalom fényűző termeit
-      és titkos folyosóit, a csapat szembekerül az ősi csapdákkal és
-      rejtvényekkel, melyek védelmezik a kincseket. Ám a kincsvadászok nem
-      hagyják magukat eltántorítani, és keményen dolgoznak együtt, hogy
-      legyőzzék a kihívásokat és elérjék a céljukat. Végül, a csapat eljut a
-      Gyémánt Korona szentélyébe, ahol a korona fénye elvakítja őket. Ám az
-      ősi birodalom titkai nem mindig olyan egyszerűek, ahogy az első
-      pillantásra látszanak. A kincsvadászoknak meg kell találniuk a módját,
-      hogy biztonságosan kinyissák a korona vitrinjét, és megszerezzék a
-      drágaköveket, mielőtt az idő lejárna.
+      A csendes erdő mélyén, ahol a fák titkokat őriznek, áll egy ősi és
+      titokzatos építmény: az Elveszett Templom. Legendák szerint ez a templom
+      egykor egy hatalmas birodalom központja volt, amely most már csak
+      romokban hever, és elveszett az idők homályában. Egy nap egy bátor
+      felfedező csapat úgy dönt, hogy felderíti a Templom titkait. Mélyen a
+      rengetegben járva, megtalálják az elveszettnek hitt építményt, melynek
+      bejárata rég elrejtve maradt az idők során. Bár a bejutás nehézkes, a
+      csapat végül sikeresen belép a templom falai közé. Ahogy felfedezik a
+      Templom belsejét, rájönnek, hogy ez a hely tele van rejtélyekkel és
+      kihívásokkal. Rejtvények, csapdák és titkos folyosók várnak rájuk,
+      mindegyik egy újabb próbatétel a Templom titkainak felfedezéséhez. A
+      csapat szorosan együtt dolgozik, mindenki hozzáteszi a tudását és
+      képességeit a közös cél érdekében. Végül, miután megoldották az utolsó
+      rejtvényt és legyőzték az utolsó akadályt, a csapat megtalálja az
+      Elveszett Templom legnagyobb titkát: egy ősi könyvet, melyben a
+      birodalom elveszett története és hatalmas kincsek rejlenek. Megszerezve
+      a könyvet, a csapat sikeresen távozik a Templomból, hatalmas kalandjuk
+      emlékét magukkal vihetik, miközben az ősi építmény újra a csendes erdő
+      titkaivá válik.
     </div>
     <div class="img-container">
-      <img src="img/palace.jpg" alt="Fényes csillár" />
-      <img src="img/palace1.jpg" alt="Kicsek" />
-      <img src="img/palace2.jpg" alt="Korona" />
+      <img src="img/church.jpg" alt="Piros ajtó" />
+      <img src="img/church1.jpg" alt="Biblia" />
+      <img src="img/church2.jpg" alt="Templom egy erdőben" />
     </div>
     <div class="h2">Szabad időpontok</div>
     <table id="table-desktop">
@@ -219,8 +208,8 @@ include ("kozos.php");
         <td>&#10060;</td>
       </tr>
     </table>
-    <a href="rooms.php" class="btn btn-secondary">Megnézem a szobákat</a>
-    <a href="booking_page.php" class="btn btn-primary">Lefoglalom</a>
+    <a href="rooms.html" class="btn btn-secondary">Megnézem a szobákat</a>
+    <a href="booking.html" class="btn btn-primary">Lefoglalom</a>
   </main>
   <footer>
     <p class="fa fa-facebook"></p>

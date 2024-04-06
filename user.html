@@ -1,15 +1,10 @@
-<?php
-session_start();
-include ("kozos.php");
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bejelentkezés/Regisztráció</title>
+  <title>Felhasználói adatok</title>
   <link rel="stylesheet" href="styles/styles.css" />
   <link rel="stylesheet" href="styles/signin.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -56,51 +51,53 @@ include ("kozos.php");
       <li><a href="rooms.php">Szobáink</a></li>
       <li><a href="about.php">Rólunk</a></li>
       <li><a href="booking_page.php">Foglalás</a></li>
-      <?php if (!isset($_SESSION["user"]) || empty($_SESSION["user"])): ?>
-        <li class="active-menu"><a href="signin_page.php" class="fa-regular fa-user"></a></li>
-      <?php else: ?>
-        <li class="active-menu"><a href="user_page.php" class="fa-regular fa-user active-menu"></a></li>
-      <?php endif; ?>
+      <li class="active-menu"><a href="signin_page.php" class="fa-regular fa-user"></a></li>
     </ul>
   </header>
   <main>
-    <div class="h1">Bejelentkezés/Regisztráció</div>
-    <form action="signup.php" method="POST">
-      <div class="h2">Regisztráció</div>
+    <div class="h1">Felhasználói fiók</div>
+    <form action="user.php" method="POST">
+      <div class="h2">Adatmódosítás</div>
       <div class="form-elements-container">
         <div class="form-element">
           <label for="username_reg" class="paragraph">Felhasználó név:</label>
-          <input type="text" name="username" id="username_reg" placeholder="kissbela" required />
+          <input type="text" name="username" id="username_reg"
+            placeholder="kissbela"/>
+        </div>
+        <div class="form-element">
+          <label for="password_old" class="paragraph">Régi jelszó:</label>
+          <input type="password" name="password_old" id="password_old" placeholder="Jelszó"
+            autocomplete="new-password" />
+        </div>
+        <div class="form-element">
+          <label for="password_new" class="paragraph">Új jelszó:</label>
+          <input type="password" name="password" id="password_new" placeholder="Jelszó" autocomplete="new-password" />
+        </div>
+        <div class="form-element">
+          <label for="password2_new" class="paragraph">Új jelszó mégegyszer:</label>
+          <input type="password" name="password2" id="password2_new" placeholder="Jelszó" autocomplete="new-password" />
+        </div>
+        <div class="form-element">
+          <label for="last-name" class="paragraph">Vezetéknévnév:</label>
+          <input type="text" name="last_name" id="last-name" placeholder="Kiss" />
+        </div>
+        <div class="form-element">
+          <label for="first-name" class="paragraph">Keresztnév:</label>
+          <input type="text" name="first_name" id="first-name" placeholder="Ernő" />
+        </div>
+        <div class="form-element">
+          <label for="phone" class="paragraph">Telefonszám:</label>
+          <input type="tel" name="phone" id="phone" placeholder="06201234567"
+            pattern="[0][6][0-9]{9}" />
         </div>
         <div class="form-element">
           <label for="email" class="paragraph">Email cím:</label>
-          <input type="email" name="email" id="email" placeholder="elek@gmail.com" required />
-        </div>
-        <div class="form-element">
-          <label for="password_reg" class="paragraph">Jelszó:</label>
-          <input type="password" name="password" id="password_reg" placeholder="Jelszó" required />
-        </div>
-        <div class="form-element">
-          <label for="password2_reg" class="paragraph">Jelszó mégegyszer:</label>
-          <input type="password" name="password2" id="password2_reg" placeholder="Jelszó" required />
+          <input type="email" name="email" id="email" placeholder="elek@gmail.com" />
         </div>
       </div>
-      <button type="submit" class="btn btn-primary" name="signup">Regisztráció</button>
-      <button type="reset">Törlöm az adataimat!</button>
-    </form>
-    <form action="signin.php" method="POST">
-      <div class="h2">Bejelentkezés</div>
-      <div class="form-elements-container">
-        <div class="form-element">
-          <label for="username_be" class="paragraph">Felhasználó név:</label>
-          <input type="text" name="username" id="username_be" placeholder="kissbela" required />
-        </div>
-        <div class="form-element">
-          <label for="password_be" class="paragraph">Jelszó:</label>
-          <input type="password" name="password" id="password_be" placeholder="Jelszó" required />
-        </div>
-      </div>
-      <button type="submit" class="btn btn-primary" name="signin">Bejelentkezés</button>
+      <button type="submit" class="btn btn-primary" name="save">Mentés</button>
+      <button class="btn btn-secondary" name="logout">Kijelentkezés</button>
+      <button class="btn" name="delete">Törlöm a fiókomat!</button>
     </form>
   </main>
   <footer>

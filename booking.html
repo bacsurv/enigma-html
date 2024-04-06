@@ -1,13 +1,3 @@
-<?php
-session_start();
-include ("kozos.php");
-
-if (!isset($_SESSION["user"]) || empty($_SESSION["user"])) {
-  header("location: signin_page.php");
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,15 +27,11 @@ if (!isset($_SESSION["user"]) || empty($_SESSION["user"])) {
     </header>
     <nav>
       <ul>
-        <li><a href="index.php">Főoldal</a></li>
-        <li><a href="rooms.php">Szobáink</a></li>
-        <li><a href="about.php">Rólunk</a></li>
+        <li><a href="index.html">Főoldal</a></li>
+        <li><a href="rooms.html">Szobáink</a></li>
+        <li><a href="about.html">Rólunk</a></li>
         <li><a href="" class="active-menu">Foglalás</a></li>
-        <?php if (!isset($_SESSION["user"]) || empty($_SESSION["user"])): ?>
-          <li><a href="signin_page.php">Bejelentkezés/Regisztráció</a></li>
-        <?php else: ?>
-          <li><a href="user_page.php">Felhasználói adatmódosítás</a></li>
-        <?php endif; ?>
+        <li><a href="signin.html">Bejelentkezés/Regisztráció</a></li>
       </ul>
     </nav>
   </aside>
@@ -57,15 +43,11 @@ if (!isset($_SESSION["user"]) || empty($_SESSION["user"])) {
     </a>
     <div class="logo">Enigma</div>
     <ul>
-      <li><a href="index.php">Főoldal</a></li>
-      <li><a href="rooms.php">Szobáink</a></li>
-      <li><a href="about.php">Rólunk</a></li>
-      <li class="active-menu"><a href="booking_page.php">Foglalás</a></li>
-      <?php if (!isset($_SESSION["user"]) || empty($_SESSION["user"])): ?>
-        <li><a href="signin_page.php" class="fa-regular fa-user"></a></li>
-      <?php else: ?>
-        <li><a href="user_page.php" class="fa-regular fa-user"></a></li>
-      <?php endif; ?>
+      <li><a href="index.html">Főoldal</a></li>
+      <li><a href="rooms.html">Szobáink</a></li>
+      <li><a href="about.html">Rólunk</a></li>
+      <li class="active-menu"><a href="booking.html">Foglalás</a></li>
+      <li><a href="signin.html" class="fa-regular fa-user"></a></li>
   </header>
   <main>
     <div class="h1">Foglalj időpontot</div>
@@ -87,7 +69,7 @@ if (!isset($_SESSION["user"]) || empty($_SESSION["user"])) {
       <div class="h2">Válassz időpontot</div>
       <div class="paragraph important">
         Mielőtt foglalsz, győződj meg róla
-        <a href="rooms.php">az aktuális szoba</a> oldalán, hogy szabad az időpont!
+        <a href="rooms.html">az aktuális szoba</a> oldalán, hogy szabad az időpont!
       </div>
       <div class="paragraph">Válassz dátumot:</div>
       <input type="date" name="date" id="date" required min="2024-05-06" max="2024-05-12" />
@@ -116,15 +98,11 @@ if (!isset($_SESSION["user"]) || empty($_SESSION["user"])) {
         </div>
         <div class="form-element">
           <label for="email" class="paragraph">Email cím:</label>
-          <input type="email" name="email" id="email" placeholder="elek@gmail.com"
-            value="<?php if (isset($_SESSION['email']))
-              echo $_SESSION['email']; ?>" required />
+          <input type="email" name="email" id="email" placeholder="elek@gmail.com" required />
         </div>
         <div class="form-element">
           <label for="phone" class="paragraph">Telefonszám:</label>
-          <input type="tel" name="phone" id="phone" placeholder="06201234567"
-            value="<?php if (isset($_SESSION['phone']))
-              echo $_SESSION['phone']; ?>" required pattern="[0][6][0-9]{9}" />
+          <input type="tel" name="phone" id="phone" placeholder="06201234567" required pattern="[0][6][0-9]{9}" />
         </div>
         <div class="form-element message">
           <label for="message" class="paragraph">Megjegyzés:</label>
@@ -133,7 +111,7 @@ if (!isset($_SESSION["user"]) || empty($_SESSION["user"])) {
         </div>
       </div>
       <button type="submit" class="btn btn-primary" name="booking">Lefoglalom</button>
-      <a href="rooms.php" class="btn btn-secondary">Megnézem a szobákat</a>
+      <a href="rooms.html" class="btn btn-secondary">Megnézem a szobákat</a>
       <button type="reset">Törlöm az adataimat!</button>
     </form>
   </main>

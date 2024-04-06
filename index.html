@@ -1,8 +1,3 @@
-<?php
-session_start();
-include ("kozos.php");
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,14 +28,10 @@ include ("kozos.php");
     <nav>
       <ul>
         <li><a href="" class="active-menu">Főoldal</a></li>
-        <li><a href="rooms.php">Szobáink</a></li>
-        <li><a href="about.php">Rólunk</a></li>
-        <li><a href="booking_page.php">Foglalás</a></li>
-        <?php if (!isset($_SESSION["user"]) || empty($_SESSION["user"])): ?>
-          <li><a href="signin_page.php">Bejelentkezés/Regisztráció</a></li>
-        <?php else: ?>
-          <li><a href="user_page.php">Felhasználói adatmódosítás</a></li>
-        <?php endif; ?>
+        <li><a href="rooms.html">Szobáink</a></li>
+        <li><a href="about.html">Rólunk</a></li>
+        <li><a href="booking.html">Foglalás</a></li>
+        <li><a href="signin.html">Bejelentkezés/Regisztráció</a></li>
       </ul>
     </nav>
   </aside>
@@ -53,14 +44,10 @@ include ("kozos.php");
     <div class="logo">Enigma</div>
     <ul>
       <li class="active-menu"><a href="">Főoldal</a></li>
-      <li><a href="rooms.php">Szobáink</a></li>
-      <li><a href="about.php">Rólunk</a></li>
-      <li><a href="booking_page.php">Foglalás</a></li>
-      <?php if (!isset($_SESSION["user"]) || empty($_SESSION["user"])): ?>
-        <li><a href="signin_page.php" class="fa-regular fa-user"></a></li>
-      <?php else: ?>
-        <li><a href="user_page.php" class="fa-regular fa-user"></a></li>
-      <?php endif; ?>
+      <li><a href="rooms.html">Szobáink</a></li>
+      <li><a href="about.html">Rólunk</a></li>
+      <li><a href="booking.html">Foglalás</a></li>
+      <li><a href="signin.html" class="fa-regular fa-user"></a></li>
     </ul>
   </header>
   <main>
@@ -72,14 +59,14 @@ include ("kozos.php");
           szabadulás felé. Válaszd a kalandot és légy részese egy
           felejthetetlen élménynek!
         </div>
-        <a href="booking_page.php" class="btn btn-primary">Időpontot foglalok</a>
+        <a href="booking_page.html" class="btn btn-primary">Időpontot foglalok</a>
       </div>
     </section>
     <section id="rooms-section">
       <div class="h1">Tekintsd meg szobáinkat</div>
       <div class="cards-container">
         <div class="card">
-          <a href="room1.php">
+          <a href="room1.html">
             <div class="card-img">
               <img src="img/church.jpg" alt="piros templom ajtó" />
             </div>
@@ -95,7 +82,7 @@ include ("kozos.php");
           </a>
         </div>
         <div class="card">
-          <a href="room2.php">
+          <a href="room2.html">
             <div class="card-img">
               <img src="img/palace.jpg" alt="kristály csillár" />
             </div>
@@ -111,7 +98,7 @@ include ("kozos.php");
           </a>
         </div>
         <div class="card">
-          <a href="room3.php">
+          <a href="room3.html">
             <div class="card-img">
               <img src="img/forest.jpg" alt="sejtelmes erdő" />
             </div>
@@ -128,8 +115,8 @@ include ("kozos.php");
           </a>
         </div>
       </div>
-      <a href="rooms.php" class="btn btn-secondary">Megnézem a szobákat</a>
-      <a href="booking_page.php" class="btn btn-primary">Időpontot foglalok</a>
+      <a href="rooms.html" class="btn btn-secondary">Megnézem a szobákat</a>
+      <a href="booking.html" class="btn btn-primary">Időpontot foglalok</a>
     </section>
     <section id="game-section">
       <div class="h1">Hogyan működik a szabadulószoba?</div>
