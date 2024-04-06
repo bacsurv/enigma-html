@@ -15,8 +15,16 @@
 
 /* HEADER */
 
+body {
+    height: 100vh;
+    background-color: var(--dark-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 body header {
     width: 100%;
+    height: 4rem;
     background-color: var(--brown);
     color: var(--dark-grey);
     display: flex;
@@ -38,24 +46,33 @@ body header a {
     text-decoration: none;
     color: inherit;
 }
-body header ul {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
+.fa-regular::before {
+    display: inline-block;
+    padding-top: 0.3rem;
 }
-body header ul li, #side-drawer nav ul li {
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+#side-drawer nav ul li {
     padding: 0.9rem 2rem;
     height: 100%;
 }
-body header ul li:hover, #side-drawer nav ul li a {
+.menu a {
+    display: inline-block;
+    height: 100%;
+    padding: 0.7rem 2rem;
+}
+.menu a:hover, #side-drawer nav ul li a {
     height: 100%;
 }
-body header ul li:hover, #side-drawer nav ul li a:hover {
+.menu a:hover, #side-drawer nav ul li a:hover {
     background-color: var(--dark-grey);
     color: var(--light-brown);
     cursor: pointer;
 }
-body header ul .active-menu, #side-drawer nav ul li .active-menu {
+.active-menu, #side-drawer nav ul li .active-menu {
     background-color: var(--dark-grey);
     color: var(--light-brown);
 }
@@ -109,6 +126,7 @@ body .side-drawer-btn {
 
 
 /* MAIN közös*/
+
 .h1 {
     font-family: var(--special);
     font-size: 4rem;
@@ -163,30 +181,16 @@ footer {
     color: var(--dark-grey);
     text-align: center;
 }
-.fa {
+footer .fa {
     padding: 8px;
     width: 3rem;
     height: 3rem;
     text-align: center;
     margin: 1rem 2px;
     border-radius: 50%;
-  }  
-.fa-facebook {
     color: var(--dark-grey);
     background-color: var(--light-brown);
-}
-.fa-instagram {
-    color: var(--dark-grey);
-    background-color: var(--light-brown);
-}
-.fa-youtube {
-    color: var(--dark-grey);
-    background-color: var(--light-brown);
-}
-.fa-google {
-    color: var(--dark-grey);
-    background-color: var(--light-brown);
-}
+  }
 
 
 
@@ -206,11 +210,15 @@ footer {
 
 }
 @media (max-width: 1024px) {
-    body header ul li, #side-drawer nav ul li {
+    #side-drawer nav ul li {
         padding: 0.8rem 2rem;
     }
     body header .logo {
         padding: 0 1.2rem;
+    }
+    .menu a {
+        font-size: 1.4rem;
+        padding: 0.9rem 1.2rem;
     }
     .h1 {
         font-size: 2.3rem;
@@ -227,7 +235,7 @@ footer {
     }
 }
 @media (max-width: 768px) {
-    body header ul {
+    .menu {
         display: none;
     }
     .side-drawer-btn {

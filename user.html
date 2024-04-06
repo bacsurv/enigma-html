@@ -27,15 +27,11 @@
     </header>
     <nav>
       <ul>
-        <li><a href="index.php">Főoldal</a></li>
-        <li><a href="rooms.php">Szobáink</a></li>
-        <li><a href="about.php">Rólunk</a></li>
-        <li><a href="booking_page.php">Foglalás</a></li>
-        <?php if (!isset($_SESSION["user"]) || empty($_SESSION["user"])): ?>
-          <li><a href="signin_page.php" class="active-menu">Bejelentkezés/Regisztráció</a></li>
-        <?php else: ?>
-          <li><a href="user_page.php" class="active-menu">Felhasználói adatmódosítás</a></li>
-        <?php endif; ?>
+        <li><a href="index.html">Főoldal</a></li>
+        <li><a href="rooms.html">Szobáink</a></li>
+        <li><a href="about.html">Rólunk</a></li>
+        <li><a href="booking.html">Foglalás</a></li>
+        <li><a href="" class="active-menu">Bejelentkezés/Regisztráció</a></li>
       </ul>
     </nav>
   </aside>
@@ -46,13 +42,13 @@
       <span class="lines"></span>
     </a>
     <div class="logo">Enigma</div>
-    <ul>
-      <li><a href="index.php">Főoldal</a></li>
-      <li><a href="rooms.php">Szobáink</a></li>
-      <li><a href="about.php">Rólunk</a></li>
-      <li><a href="booking_page.php">Foglalás</a></li>
-      <li class="active-menu"><a href="signin_page.php" class="fa-regular fa-user"></a></li>
-    </ul>
+    <div class="menu">
+      <a href="index.html">Főoldal</a>
+      <a href="rooms.html">Szobáink</a>
+      <a href="about.html">Rólunk</a>
+      <a href="booking.html">Foglalás</a>
+      <a href="" class="fa-regular fa-user active-menu"></a>
+    </div>
   </header>
   <main>
     <div class="h1">Felhasználói fiók</div>
