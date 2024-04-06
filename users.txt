@@ -1,0 +1,3 @@
+a:6:{s:8:"username";s:7:"bacsurv";s:8:"password";s:8:"123aA123";s:5:"email";s:17:"bacsurv@gmail.com";s:5:"phone";s:11:"06305465451";s:10:"first_name";s:9:"Viktória";s:9:"last_name";s:6:"Bacsur";}
+a:3:{s:8:"username";s:4:"Elek";s:8:"password";s:9:"Alma1234!";s:5:"email";s:6:"alma@e";}
+a:3:{s:8:"username";s:4:"Elek";s:8:"password";s:9:"Alma1234!";s:5:"email";s:6:"alma@e";}
